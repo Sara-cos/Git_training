@@ -10,8 +10,9 @@ Local repositories reside on the computers of team members. In contrast, remote 
 
 **Stashing** : Often, when you’ve been working on part of your project, things are in a messy state and you want to switch branches for a bit to work on something else. The problem is, you don’t want to do a commit of half-done work just so you can get back to this point later. The answer to this issue is the git stash command.
 
+**Staged** files are files that are ready to be committed to the repository you are working on.
 
-
+**gitignore** or Git Ignore : files or parts of your project, you do not want to share. Git can specify which files or parts of your project should be ignored by Git using a .gitignore file. Git will not track files and folders specified in .gitignore. However, the .gitignore file itself IS tracked by Git.
 
 
 #### To see the status of your files
@@ -19,7 +20,7 @@ Local repositories reside on the computers of team members. In contrast, remote 
 git status
 ```
 
-#### git version
+#### Git version
 ```
 git --version
 ```
@@ -76,13 +77,14 @@ If any specific previous stash, *Here it takes to stash 2/two stash before*
 git stash apply stash@{2} 
 ```
 
-#### A list of remote repositories and their URLs
 
+#### A list of remote repositories and their URLs
 ```
 git remote -v
 ```
 
-#### cherry picked
+
+#### Cherry picked
 commit is being cherry picked as the new HEAD of the commit history
 ```
 git cherry-pick commit_name
@@ -96,7 +98,6 @@ The current branch’s HEAD is reset the current branch to the commit just befor
 
 
 #### Merge the previous set of commits
-
 ```
 git merge --squash HEAD@{1}
 ```
@@ -111,7 +112,9 @@ git merge branchname
 
 
 #### How to get help for perticular command
-
+```
+git (command) -help
+```
 
 #### For connecting the local repository to remote repository, 
 ```
